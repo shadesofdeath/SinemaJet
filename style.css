@@ -5,6 +5,12 @@ body {
   max-width: max-content;
 }
 
+#categorySelect{
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 16px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -23,14 +29,17 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
+
 .card:hover .overlay {
   opacity: 1;
 }
+
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -46,6 +55,7 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+
 .overlay h2 {
   margin-top: 0;
   font-size: 16px;
@@ -53,6 +63,7 @@ body {
   justify-content: center;
   max-width: 120px;
 }
+
 .overlay p {
   margin-top: 0;
   font-size: 13px;
@@ -60,6 +71,7 @@ body {
   justify-content: center;
   max-width: 120px;
 }
+
 .search {
   display: flex;
   justify-content: center;
@@ -67,16 +79,17 @@ body {
   align-items: center;
   margin-top: 20px;
 }
+
 .search input[type="text"] {
   border: none;
   border-radius: 16px;
   margin-right: 12px;
-  width: 300px;
+  width: 400px;
 }
+
 .search button {
   padding: 10px;
   border: none;
-  color: #fff;
   border-radius: 16px;
   text-align: center;
   text-decoration: none;
@@ -87,9 +100,14 @@ body {
   width: 100px;
   border: none;
   outline: none;
-  color: white;
   border: none;
   cursor: pointer;
+}
+
+.search select {
+  border: none;
+  border-radius: 16px;
+  margin-right: 12px;
 }
 
 #baslik {
@@ -99,7 +117,9 @@ body {
   font-size: 30px;
 }
 
-#downloadbtn {
+
+/* New styles for the download button */
+.download-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,5 +132,6 @@ body {
   font-weight: 600;
   color: rgb(0, 0, 0);
   border-radius: 16px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
