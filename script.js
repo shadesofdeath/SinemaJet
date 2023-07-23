@@ -1,4 +1,3 @@
-// JavaScript
 const filmContainer = document.getElementById("filmContainer");
 const categorySelect = document.getElementById("categorySelect");
 const searchInput = document.querySelector('input[type="text"]');
@@ -92,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchFilms();
 
   categorySelect.addEventListener("change", filterCards);
-  searchInput.addEventListener("input", filterCards); // Add the input event listener
+  searchInput.addEventListener("input", filterCards);
 
   // Başlangıçta tüm filmleri göstermek için
   categorySelect.value = "all";
