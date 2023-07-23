@@ -2,8 +2,10 @@
 const filmContainer = document.getElementById("filmContainer");
 const categorySelect = document.getElementById("categorySelect");
 const searchInput = document.querySelector('input[type="text"]');
+const filmCountElement = document.getElementById("filmCount");
 
 let films = [];
+let totalFilmCount = 0;
 
 function createFilmCard(film) {
   const card = document.createElement("div");
@@ -52,6 +54,8 @@ function fetchFilms() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         films = JSON.parse(xhr.responseText);
+        totalFilmCount = films.length; // Update the totalFilmCount based on the number of films fetched
+        filmCountElement.textContent = totalFilmCount; // Display the film count on the webpage
         films.forEach(createFilmCard);
       } else {
         console.error("Failed to fetch films.");
@@ -73,7 +77,8 @@ function filterCards() {
     const filmTitle = card.querySelector("h2").textContent.toLowerCase();
     const filmCategories = JSON.parse(card.getAttribute("data-categories"));
     const titleMatch = filmTitle.includes(searchQuery);
-    const categoryMatch = selectedCategory === "all" || filmCategories.includes(selectedCategory);
+    const categoryMatch =
+      selectedCategory === "all" || filmCategories.includes(selectedCategory);
 
     if (titleMatch && categoryMatch) {
       card.style.display = "block";
