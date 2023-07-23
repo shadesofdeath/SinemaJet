@@ -13,6 +13,7 @@ body {
 
 .container {
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -82,33 +83,26 @@ body {
 }
 
 .search input[type="text"] {
+  flex: 1; /* Yeni eklendi: Alanın tüm boş alanı kaplamasını sağlar */
   border: none;
   border-radius: 16px;
   margin-right: 12px;
-  width: 400px;
+  max-width: 400px; /* Genişliği 400px'den fazla olmayacak şekilde ayarladık */
 }
 
-.search button {
-  padding: 10px;
-  border: none;
-  border-radius: 16px;
-  text-align: center;
-  text-decoration: none;
+.search {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  width: 100px;
-  border: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
+  margin-top: 20px;
 }
 
 .search select {
+  flex: 0; /* Yeni eklendi: Alanın içeriğine göre genişlik belirlenecek */
   border: none;
   border-radius: 16px;
   margin-right: 12px;
+  width: 200px; /* Genişliği 200px olarak sabit tuttuk */
 }
 
 #baslik {
@@ -136,19 +130,14 @@ body {
   text-decoration: none !important;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 footer{
-  background-color: rgb(30, 36, 45);
+  background-color: rgb(26, 31, 40);
   color: white;
   text-align: center;
   width: 100%;
   height: 20px;
-  position: fixed;
   bottom: 0;
+  position: fixed;
   left: 0;
   display: flex;
   justify-content: center;
