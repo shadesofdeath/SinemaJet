@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SinemaJet - Film İndir</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css" integrity="sha512-13RM4Q4wPLiDEFNxKQbZMoyM3qR3eIsTYoXy6hJlqWmPzFCBLyxG3LGx/48N+sTcLxvN3IoThkZYxo3yuaGSvw==" referrerpolicy="no-referrer" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <h3 id="baslik">
-    SinemaJet
-    <i class="ri-rocket-line"> </i>
-  </h3>
-  <div class="search">
-    <input placeholder="Search..." type="text">
-    <select id="categorySelect">
-      <option value="all">TÜMÜ</option>
-      <option value="Aile">AİLE</option>
-      <option value="Aksiyon">AKSİYON</option>
-      <option value="Animasyon">Animasyon</option>
-      <option value="Belgesel">belgesel</option>
-      <option value="Bilimkurgu">bilimkurgu</option>
-      <option value="Biyografi">biyografi</option>
-      <option value="Dram">dram</option>
-      <option value="Fantastik">fantastik</option>
-      <option value="Gerilim">gerilim</option>
-      <option value="Gizem">gizem</option>
-      <option value="Komedi">komedi</option>
-      <option value="Korku">korku</option>
-      <option value="Macera">macera</option>
-      <option value="Müzik">müzik</option>
-      <option value="Polisiye">polisiye</option>
-      <option value="Reality">reality</option>
-      <option value="Romantik">romantik</option>
-      <option value="Savas">savaş</option>
-      <option value="Spor">spor</option>
-      <option value="Suç">suç</option>
-      <option value="Tarih">tarih</option>
-      <option value="Western">western</option>
-    </select>
-  </div>
-  <div class="container" id="filmContainer">
-    <!-- Film cards will be dynamically added here -->
-  </div>
-</body>
-<footer>
-  <div class="film-count" id="filmCountContainer">
-    Sitemizden <span id="filmCount">0</span> film bulunmaktadır.
-  </div>
-</footer>
-<script src="script.js"></script>
+  <head>
+    <title>SinemaJet - Film İndir</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css"
+      integrity="sha512-13RM4Q4wPLiDEFNxKQbZMoyM3qR3eIsTYoXy6hJlqWmPzFCBLyxG3LGx/48N+sTcLxvN3IoThkZYxo3yuaGSvw=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h3 id="baslik">
+      SinemaJet
+      <i class="ri-rocket-line"> </i>
+    </h3>
+    <div class="search">
+      <input placeholder="İndirmek istediğin filmi ara.." type="text" />
+      <select id="categorySelect">
+        <option value="all">TÜMÜ</option>
+        <option value="Aile">AİLE</option>
+        <option value="Aksiyon">AKSİYON</option>
+        <option value="Animasyon">Animasyon</option>
+        <option value="Belgesel">belgesel</option>
+        <option value="Bilimkurgu">bilimkurgu</option>
+        <option value="Biyografi">biyografi</option>
+        <option value="Dram">dram</option>
+        <option value="Fantastik">fantastik</option>
+        <option value="Gerilim">gerilim</option>
+        <option value="Gizem">gizem</option>
+        <option value="Komedi">komedi</option>
+        <option value="Korku">korku</option>
+        <option value="Macera">macera</option>
+        <option value="Müzik">müzik</option>
+        <option value="Polisiye">polisiye</option>
+        <option value="Reality">reality</option>
+        <option value="Romantik">romantik</option>
+        <option value="Savas">savaş</option>
+        <option value="Spor">spor</option>
+        <option value="Suç">suç</option>
+        <option value="Tarih">tarih</option>
+        <option value="Western">western</option>
+      </select>
+    </div>
+    <div class="container" id="filmContainer">
+      <!-- Film cards will be dynamically added here -->
+    </div>
+  </body>
+  <footer>
+    <div class="film-count" id="filmCountContainer">
+      Sitemizde şuan <span id="filmCount">0</span> film bulunmaktadır.
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </html>
