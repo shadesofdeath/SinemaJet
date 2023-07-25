@@ -151,3 +151,24 @@ footer{
   margin-top: 5px !important;
   font-size: 14px;
 }
+
+/* ...Your existing CSS styles... */
+
+#loadMoreBtn {
+  margin: 10px auto;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+#loadMoreBtn:hover {
+  background-color: #000000;
+}
+
+/* ...Your existing CSS styles... */
