@@ -33,7 +33,7 @@
       <i class="ri-rocket-line"> </i>
     </h3>
     <div class="search">
-      <input placeholder="İndirmek istediğin filmi ara.." type="text" />
+      <input id="filmInput" placeholder="İndirmek istediğin filmi ara.." type="text" />
       <select id="categorySelect">
         <option value="all">TÜMÜ</option>
         <option value="Aile">AİLE</option>
@@ -73,5 +73,12 @@
       <ul id="filmCountList"></ul>
     </div>
   </footer>
+  <script>
+    const filmInput = document.getElementById("filmInput");
+  
+    filmInput.addEventListener("input", function() {
+      this.value = this.value.toLocaleLowerCase('tr');
+    });
+  </script>
   <script src="script.js"></script>
 </html>
